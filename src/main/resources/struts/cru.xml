@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configeration 2.0//EN" 
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="cru" namespace="/" extends="json-default">
+		<action name="addCardUser" class="CardInfo.action.AddCardUserAction">
+			<result type="json"></result>
+		</action>
+		<action name="addSscardUser" class="CardInfo.action.AddSscardUserAction">
+			<result type="json"></result>
+		</action>
+		<action name="getOldCard" class="CardInfo.action.GetOldCardAction">
+			<result name="success">/facebox/_facebox_editCardUser.jsp</result>
+			<result name="error">/facebox/_facebox_editCardUser.jsp</result>
+		</action>
+		<action name="getOldSscard" class="CardInfo.action.GetOldSscardAction">
+			<result name="success">/facebox/_facebox_editSscardUser.jsp</result>
+			<result name="error">/facebox/_facebox_editCardUser.jsp</result>
+		</action>
+		<action name="editCardUser" class="CardInfo.action.EditCardUserAction">
+			<result type="json"></result>
+		</action>
+		<action name="editSscardUser" class="CardInfo.action.EditSscardUserAction">
+			<result type="json"></result>
+		</action>
+		<action name="removeCardUser" class="CardInfo.action.RemoveCardUserAction">
+			<result type="json"></result>
+		</action>
+		<action name="removeSscardUser" class="CardInfo.action.RemoveSscardUserAction">
+			<result type="json"></result>
+		</action>
+	</package>
+</struts>
